@@ -9,9 +9,10 @@
  */
 
 import React from 'react';
+import {ChatRoom} from './components';
 
 const App = () => {
-  return null;
+  return <ChatRoom />;
 };
 
 export default App;
