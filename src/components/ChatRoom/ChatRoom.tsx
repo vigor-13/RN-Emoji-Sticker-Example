@@ -18,13 +18,8 @@ const ChatRoom = () => {
       <ImageBackground
         source={require('../../assets/images/chatroom-background.jpg')}
         style={styles.container}>
-        <View style={styles.topArea}></View>
         <ChatList />
-        <KeyboardAvoidingView behavior="padding">
-          <View style={styles.bottomArea}>
-            <ChatInput />
-          </View>
-        </KeyboardAvoidingView>
+        <ChatInput />
       </ImageBackground>
     </DismissKeyboardView>
   );
@@ -33,11 +28,6 @@ const ChatRoom = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  topArea: {},
-  bottomArea: {
-    backgroundColor: 'rgba(52, 52, 52, 0.8)',
-    paddingBottom: 30,
   },
 });
 
