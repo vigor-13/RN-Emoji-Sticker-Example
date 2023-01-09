@@ -368,7 +368,7 @@ PODS:
     - React-jsi (= 0.70.6)
     - React-logger (= 0.70.6)
     - React-perflogger (= 0.70.6)
-  - ReactNativeUiLib (6.27.3):
+  - ReactNativeUiLib (3.0.9):
     - React
   - RNGestureHandler (2.8.0):
     - React-Core
@@ -463,7 +463,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - ReactNativeUiLib (from `../node_modules/react-native-ui-lib`)
+  - ReactNativeUiLib (from `../node_modules/react-native-ui-lib/lib`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -554,7 +554,7 @@ EXTERNAL SOURCES:
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
   ReactNativeUiLib:
-    :path: "../node_modules/react-native-ui-lib"
+    :path: "../node_modules/react-native-ui-lib/lib"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -609,7 +609,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: c75ceef7aa60a33b2d5731ebe5800ddde40cefc4
   React-runtimeexecutor: 15437b576139df27635400de0599d9844f1ab817
   ReactCommon: 349be31adeecffc7986a0de875d7fb0dcf4e251c
-  ReactNativeUiLib: 6aeabd945f901bad6c51ceae15906d6103b6a409
+  ReactNativeUiLib: 2601bf164b2d621da11fff43198e5b36b8db0211
   RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
   RNReanimated: ce445c233a6ff5600223484a88ad5704945d972a
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
