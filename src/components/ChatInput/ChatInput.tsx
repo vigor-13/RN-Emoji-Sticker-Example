@@ -1,16 +1,30 @@
 import React, {useState} from 'react';
-import {StyleSheet, TextInput, View, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  TextInput,
+  View,
+  TouchableOpacity,
+  SafeAreaView,
+} from 'react-native';
 import {Keyboard as UILibKeyboard} from 'react-native-ui-lib';
 import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 import useKeyboardAccessory from './useKeybardAccessory';
 
 const ChatInput = () => {
-  const {inputRef, keyboardComponent, onPressToggleKeyboardView} =
-    useKeyboardAccessory();
+  const {
+    inputRef,
+    keyboardComponent,
+    onPressToggleKeyboardView,
+    inputValue,
+    onChangeInputValue,
+    onChangeInputSelection,
+    resetKeyboardView,
+    inputSelection,
+  } = useKeyboardAccessory();
 
   const _renderContent = () => {
     return (
-      <View style={styles.backgroundContainer}>
+      <SafeAreaView style={styles.backgroundContainer}>
         <View style={styles.container}>
           <TextInput
             ref={inputRef}
@@ -18,22 +32,28 @@ const ChatInput = () => {
             placeholder="알리기"
             placeholderTextColor="#333"
             multiline
+            value={inputValue}
+            onChangeText={onChangeInputValue}
+            onSelectionChange={onChangeInputSelection}
+            onFocus={resetKeyboardView}
           />
-          <TouchableOpacity
-            style={styles.icon}
-            onPress={onPressToggleKeyboardView}>
-            <MaterialIcon
-              name={
-                keyboardComponent.component === 'emoticon.keyboard'
-                  ? 'keyboard'
-                  : 'insert-emoticon'
-              }
-              size={24}
-              color="#333"
-            />
-          </TouchableOpacity>
+          <View style={styles.iconContainer}>
+            <TouchableOpacity
+              style={styles.icon}
+              onPress={onPressToggleKeyboardView}>
+              <MaterialIcon
+                name={
+                  keyboardComponent.component === 'emoticon.keyboard'
+                    ? 'keyboard'
+                    : 'insert-emoticon'
+                }
+                size={24}
+                color="#333"
+              />
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
+      </SafeAreaView>
     );
   };
 
@@ -50,30 +70,39 @@ const ChatInput = () => {
 const styles = StyleSheet.create({
   backgroundContainer: {
     flex: 1,
-    minHeight: 80,
+    width: '100%',
     backgroundColor: 'rgba(52, 52, 52, 0.8)',
-    paddingBottom: 30,
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
   },
   container: {
     width: '100%',
     paddingHorizontal: 10,
     paddingVertical: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   input: {
-    minHeight: 30,
-    maxHeight: 100,
-    backgroundColor: 'black',
-    borderRadius: 30,
-    paddingHorizontal: 10,
     color: '#fff',
-    paddingRight: 45,
+    flex: 1,
+    minHeight: 30,
+    maxHeight: 200,
+    backgroundColor: 'black',
+    borderTopLeftRadius: 30,
+    borderBottomLeftRadius: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 5,
+    marginVertical: 0,
+  },
+  iconContainer: {
+    width: 50,
+    height: '100%',
+    backgroundColor: 'black',
+    borderTopRightRadius: 30,
+    borderBottomRightRadius: 30,
+    alignItems: 'center',
+    justifyContent: 'flex-end',
   },
   icon: {
-    position: 'absolute',
-    right: 20,
-    bottom: 13,
+    bottom: 3,
   },
 });
 

@@ -1,16 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ImageBackground,
-  View,
-  KeyboardAvoidingView,
-  Keyboard,
-} from 'react-native';
+import React from 'react';
+import {StyleSheet, ImageBackground, SafeAreaView, View} from 'react-native';
 import DismissKeyboardView from '../DismissKeyboardView';
 import ChatList from '../ChatList';
 import ChatInput from '../ChatInput';
-import {} from 'react-native-ui-lib';
 
 const ChatRoom = () => {
   return (
@@ -19,7 +11,9 @@ const ChatRoom = () => {
         source={require('../../assets/images/chatroom-background.jpg')}
         style={styles.container}>
         <ChatList />
-        <ChatInput />
+        <View style={styles.inputContainer}>
+          <ChatInput />
+        </View>
       </ImageBackground>
     </DismissKeyboardView>
   );
@@ -28,6 +22,12 @@ const ChatRoom = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  inputContainer: {
+    position: 'absolute',
+    width: '100%',
+    bottom: 0,
+    height: 'auto',
   },
 });
 
