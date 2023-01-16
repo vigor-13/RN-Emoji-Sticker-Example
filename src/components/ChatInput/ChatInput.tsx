@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 5,
     marginVertical: 0,
+    fontFamily: 'NotoColorEmoji',
   },
   iconContainer: {
     width: 50,

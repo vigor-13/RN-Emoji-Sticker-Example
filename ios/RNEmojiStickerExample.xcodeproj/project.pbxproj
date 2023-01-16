@@ -30,6 +30,7 @@
 		841A3648296BDD1E00609B75 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841A3638296BDD1D00609B75 /* Feather.ttf */; };
 		841A3649296BDD1E00609B75 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841A3639296BDD1D00609B75 /* EvilIcons.ttf */; };
 		841A364A296BDD1E00609B75 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841A363A296BDD1D00609B75 /* Ionicons.ttf */; };
+		84D535A4296FB71B008C2D8C /* NotoColorEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D535A3296FB71B008C2D8C /* NotoColorEmoji-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		841A3638296BDD1D00609B75 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		841A3639296BDD1D00609B75 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		841A363A296BDD1D00609B75 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		84D535A3296FB71B008C2D8C /* NotoColorEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoColorEmoji-Regular.ttf"; path = "../../../Downloads/Noto_Color_Emoji/NotoColorEmoji-Regular.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNEmojiStickerExample-RNEmojiStickerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNEmojiStickerExample-RNEmojiStickerExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RNEmojiStickerExample-RNEmojiStickerExampleTests/Pods-RNEmojiStickerExample-RNEmojiStickerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 		841A362A296BD7EC00609B75 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				84D535A3296FB71B008C2D8C /* NotoColorEmoji-Regular.ttf */,
 				841A362C296BDD1D00609B75 /* AntDesign.ttf */,
 				841A3636296BDD1D00609B75 /* Entypo.ttf */,
 				841A3639296BDD1D00609B75 /* EvilIcons.ttf */,
@@ -306,6 +309,7 @@
 				841A363B296BDD1E00609B75 /* Octicons.ttf in Resources */,
 				841A3643296BDD1E00609B75 /* SimpleLineIcons.ttf in Resources */,
 				841A3648296BDD1E00609B75 /* Feather.ttf in Resources */,
+				84D535A4296FB71B008C2D8C /* NotoColorEmoji-Regular.ttf in Resources */,
 				841A363D296BDD1E00609B75 /* Zocial.ttf in Resources */,
 				841A3644296BDD1E00609B75 /* FontAwesome5_Regular.ttf in Resources */,
 				841A3642296BDD1E00609B75 /* FontAwesome5_Solid.ttf in Resources */,

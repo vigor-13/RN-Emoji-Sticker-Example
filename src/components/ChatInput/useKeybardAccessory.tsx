@@ -53,14 +53,14 @@ const useKeyboardAccessory = () => {
     }
   };
 
-  const onChangeInputValue = (v: string) => {
-    setInputValue(v);
+  const onChangeInputValue = (text: string) => {
+    setInputValue(text);
   };
 
   const onChangeInputSelection = (
-    e: NativeSyntheticEvent<TextInputSelectionChangeEventData>,
+    event: NativeSyntheticEvent<TextInputSelectionChangeEventData>,
   ) => {
-    setInputSelection(e.nativeEvent.selection);
+    setInputSelection(event.nativeEvent.selection);
   };
 
   React.useEffect(() => {
